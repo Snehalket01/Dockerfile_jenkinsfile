@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Define your Docker image name
-                    def dockerImage = 'your-docker-username/your-docker-repo:latest'
+                    def dockerImage = 'snehal01102002/your-docker-repo:latest'
 
                     // Build and tag the Docker image
                     docker.build(dockerImage)
