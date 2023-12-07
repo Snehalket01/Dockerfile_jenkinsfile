@@ -14,18 +14,8 @@ environment{
             }
          }
       }
-      stage('Deploy the image')
-      {
-         steps{
-            script {
-               docker.withRegistry( '', registryCredential )
-               {
-                  dockerImage.push()
-               }
-            }
-         }
-         stage( 'Deploy the image')
-         {
+      stage( 'Deploy the image')
+       {
             steps{
                script {
                   docker.withRegistry( '', registryCredintial )
