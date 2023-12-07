@@ -1,7 +1,7 @@
 pipeline {
 environment{
    registry ='snehal01102002/assi10'
-   registryCredent = 'dockerhub_id'
+   registryCredent = 'docker_id_s'
    dockerImage= ''
 }
    agent any 
