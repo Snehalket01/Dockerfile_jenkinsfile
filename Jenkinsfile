@@ -14,15 +14,15 @@ environment{
             }
          }
       }
-      stage( 'Deploy the image')
-       {
-            steps{
-               script {
-                  docker.withRegistry( '', registryCredintial )
-                  {
-                     docker.Image.push()
-                  }
-               }
+      //stage( 'Deploy the image')
+      // {
+           //steps{
+              // script {
+                  //docker.withRegistry( '', registryCredintial )
+                 // {
+                    // docker.Image.push()
+                  //}
+               //}
             }
          }
          // stage('Clenaing up'){
@@ -30,8 +30,8 @@ environment{
        //     bat "docker rmi $registry:$BUILD_NUMBER"
          //}
     //  }
-   }
-}
+  // }
+//}
 
 
 
